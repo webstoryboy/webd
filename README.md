@@ -8,4 +8,6 @@
   <li>04. 가로 메뉴 유형2 <a href="https://webstoryboy.github.io/webd/webd04.html">View</a></li>
   <li>05. 세로 메뉴 유형1 <a href="https://webstoryboy.github.io/webd/webd05.html">View</a></li>
   <li>06. 세로 메뉴 유형2 <a href="https://webstoryboy.github.io/webd/webd06.html">View</a></li>
+  <li>07. 탭 메뉴 유형 <a href="https://webstoryboy.github.io/webd/webd07.html">View</a></li>
+  <li>08. 레이어 팝업 유형 <a href="https://webstoryboy.github.io/webd/webd08.html">View</a></li>
 </ul>
