@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 디자인 기능사 - 탭메뉴</title>
+
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+        a {color: #333; text-decoration: none;}
+        li {list-style: none;}
+        table {border-spacing: 0;}
+        .clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
+        
+        #wrap {width: 1200px; margin: 0px auto;}
+        #side {float: left; width: 300px;}
+        #content {float: left; width: 900px;}
+        
+        /* header */
+        #side {text-align: center;}
+        #side .logo {width: 300px; height: 150px; line-height: 150px; background: #d1c4e9; }
+        #side .nav {width: 300px; height: 700px; line-height: 700px; background: #b39ddb;}
+
+        /* banner */
+        #banner {width: 900px; text-align: center; height: 450px; line-height: 450px; background: #9575cd;}
+
+        /* contents */
+        #contents {width: 900px;}
+        #contents > div {float: left; width: 33.333333%; height: 300px; text-align: center; line-height: 300px;}
+        #contents > div.cont1 {background: #7e57c2;}
+        #contents > div.cont2 {background: #673ab7;}
+        #contents > div.cont3 {background: #5e35b1 ;}
+
+        /* footer */
+        #footer {width: 900px; text-align: center;}
+        #footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #5e35b1;}
+        #footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #512da8;}
+        #footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #4527a0;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="side">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">메뉴</nav>
+        </aside>
+        <section id="content">
+            <section id="banner">
+                <h2>이미지 슬라이드</h2>
+            </section>
+            <!-- //banner -->
+
+            <section id="contents" class="clearfix">
+                <div class="cont1"><h3>공지사항</h3></div>
+                <div class="cont2"><h3>갤러리</h3></div>
+                <div class="cont3"><h3>팝업</h3></div>
+            </section>
+            <!-- //contents -->
+
+            <footer id="footer">
+                <div class="foot1"><h3>로고</h3></div>
+                <div class="foot2"><h3>하단 메뉴</h3></div>
+                <div class="foot3"><h3>Copyright</h3></div>
+            </footer>
+            <!-- //footer -->
+        </section>
+    </div>
+    
+    
+    
+</body>
+
+</html>
