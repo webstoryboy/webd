@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 디자인 기능사 - 탭메뉴</title>
+
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+        a {color: #333; text-decoration: none;}
+        li {list-style: none;}
+        table {border-spacing: 0;}
+        .clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
+        
+        #wrap {width: 1200px; margin: 0px auto;}
+        
+        /* header */
+        #header {text-align: center;}
+        #header .logo {float: left; width:250px; height:100px; line-height: 100px; background: #d1c4e9;}
+        #header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
+
+        /* banner */
+        #banner {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}
+
+        /* contents */
+        #contents {text-align: center;}
+        #contents > div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
+        #contents > div.cont1 {background: #7e57c2;}
+        #contents > div.cont2 {background: #673ab7;}
+        #contents > div.cont3 {background: #5e35b1 ;}
+
+        /* footer */
+        #footer {height: 100px; line-height: 100px; text-align: center; }
+        #footer .foot1 {float: left; width: 200px; background: #5e35b1;}
+        #footer .foot2 {float: left; width: 800px; background: #512da8;}
+        #footer .foot3 {float: left; width: 200px; background: #4527a0;}
+        
+        /****** 레이어 팝업 *******/
+        .layer {
+            display: none;
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 500px; height: 500px;
+            background: #fff;
+            border: 2px solid #000;
+            margin-left: -250px;
+            margin-top: -250px;
+            z-index: 1000;
+        }
+        .layer h2 {padding: 20px; color: #000;}
+        .layer .close {
+            position: absolute; bottom: 20px; right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">메뉴</nav>
+        </header>
+        <!-- //header -->
+
+        <section id="banner">
+            <h2>이미지 슬라이드</h2>
+        </section>
+        <!-- //banner -->
+
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div class="cont3"><h3 class="layerPopup">팝업</h3></div>
+        </section>
+        <!-- //contents -->
+
+        <footer id="footer">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>Copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    
+    <!----- 레이어 팝업 ------>
+    <div class="layer">
+        <h2>타이틀</h2>
+        <a href="#" class="close">닫기</a>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+       $(".layerPopup").click(function(e){
+           e.preventDefault();
+           $(".layer").show();
+       }); 
+       $(".layer .close").click(function(e){
+           e.preventDefault();
+           $(".layer").hide();
+       });
+    </script>
+</body>
+
+</html>
