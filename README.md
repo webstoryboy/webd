@@ -2,12 +2,16 @@
 
 <h1>웹디자인 기능사 실기 한번에 붙기</h1>
 <ul>
-  <li>01. 레이아웃 유형1(가로) <a href="https://webstoryboy.github.io/webd/webd01.html">View</a></li>
-  <li>02. 레이아웃 유형2(세로) <a href="https://webstoryboy.github.io/webd/webd02.html">View</a></li>
-  <li>03. 가로 메뉴 유형1 <a href="https://webstoryboy.github.io/webd/webd03.html">View</a></li>
-  <li>04. 가로 메뉴 유형2 <a href="https://webstoryboy.github.io/webd/webd04.html">View</a></li>
-  <li>05. 세로 메뉴 유형1 <a href="https://webstoryboy.github.io/webd/webd05.html">View</a></li>
-  <li>06. 세로 메뉴 유형2 <a href="https://webstoryboy.github.io/webd/webd06.html">View</a></li>
-  <li>07. 탭 메뉴 유형 <a href="https://webstoryboy.github.io/webd/webd07.html">View</a></li>
-  <li>08. 레이어 팝업 유형 <a href="https://webstoryboy.github.io/webd/webd08.html">View</a></li>
+  <li>01. 레이아웃 유형1(가로)</li>
+  <li>02. 레이아웃 유형2(세로) </li>
+  <li>03. 가로 메뉴 유형1 </li>
+  <li>04. 가로 메뉴 유형2 </li>
+  <li>05. 세로 메뉴 유형1 </li>
+  <li>06. 세로 메뉴 유형2 </li>
+  <li>07. 탭 메뉴 유형 </li>
+  <li>08. 레이어 팝업 유형 </li>
+  <li>09. 이미지 슬라이드(위아래) </li>
+  <li>10. 이미지 슬라이드(좌우) </li>
+  <li>11. 이미지 슬라이드(페이드) </li>
+  <li>12. 실전사이트 만들기1 </li>
 </ul>
