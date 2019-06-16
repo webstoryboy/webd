@@ -15,15 +15,18 @@
         #wrap {width: 1200px; margin: 0px auto;}
         
         /* header */
-        #header {text-align: center; background: #7e57c2;}
-        #header .logo {float: left; width:250px; height:100px; line-height: 100px; background: #d1c4e9;}
-        #header .nav {float: right; width:600px; margin-top: 28px; background: #b39ddb;}
-        #header .nav li {position: relative; float: left; width: 25%; text-align: center; }
-        #header .nav li a {padding: 10px; display: block; font-size: 20px; color: #fff; }
-        #header .nav li a:hover {background: rgba(0,0,0,0.4);}
-        #header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #b39ddb; height: 176px;}
-        #header .nav li ul.submenu li {width: 100%; border-right: 0;}
-        #header .nav li ul.submenu li a:hover{background: rgba(0,0,0,0.4);}
+        #header {position: relative; text-align: center; background: #7e57c2;}
+        #header .logo {position: absolute; left: 0; top: 0; z-index: 10; width:250px; height:100px; line-height: 100px; background: #d1c4e9;}
+        #header .nav {position: relative; float: right; width:100%; margin-top: 56px;}
+        #header .nav ul {padding-left: 40%; }
+        #header .nav ul li {position: relative; float: left; width: 25%; text-align: center; }
+        #header .nav ul li a {padding: 10px; display: block; font-size: 20px; color: #fff; background: #b39ddb; }
+        #header .nav ul li a:hover {background: rgba(0,0,0,0.4);}
+        #header .nav ul li ul {padding-left: 0;}
+        #header .nav ul li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #b39ddb; height: 176px;}
+        #header .nav ul li:first-child ul.submenu:after {content: ''; position: absolute; left: -480px; top: 0; width: 480px; height: 176px; background: #b39ddb;}
+        #header .nav ul li ul.submenu li {width: 100%; border-right: 0;}
+        #header .nav ul li ul.submenu li a:hover{background: rgba(0,0,0,0.4);}
 
         /* banner */
         #banner {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}
@@ -107,11 +110,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(".nav > ul > li").mouseenter(function(){        
-            $(".nav > ul > li > ul").stop().slideDown(200);    
+            $(".nav > ul > li > ul").show();   
         });
 
         $(".nav > ul > li").mouseleave(function(){
-            $(".nav > ul > li > ul").stop().slideUp(200);
+            $(".nav > ul > li > ul").hide();
         });
     </script>
 </body>
