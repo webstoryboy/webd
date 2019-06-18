@@ -102,6 +102,8 @@
                             가로유형1 <a href="https://webstoryboy.github.io/webd/webd03.html" target="_black">GO</a><br />
                             가로유형2 <a href="https://webstoryboy.github.io/webd/webd04.html" target="_black">GO</a><br />
                             가로유형3 <a href="https://webstoryboy.github.io/webd/webd04-1.html" target="_black">GO</a><br />
+                            세로유형1 <a href="https://webstoryboy.github.io/webd/webd05.html" target="_black">GO</a><br />
+                            세로유형2 <a href="https://webstoryboy.github.io/webd/webd06.html" target="_black">GO</a><br />
                         </p>
                     </div>
                     <!-- cont4 -->
@@ -125,73 +127,80 @@
 &lt;html lang="ko"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;웹 디자인 기능사&lt;/title&gt;
+    &lt;title&gt;웹 디자인 기능사 - 탭메뉴&lt;/title&gt;
 
     &lt;style&gt;
         /* reset */
-        * {margin: 0; padding: 0; font-size: 24px; color: #fff;}
+        * {margin: 0; padding: 0; font-size: 20px; color: #fff;}
         a {color: #333; text-decoration: none;}
         li {list-style: none;}
         table {border-spacing: 0;}
         .clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
         
         #wrap {width: 1200px; margin: 0px auto;}
+        #side {float: left; width: 300px;}
+        #content {float: left; width: 900px;}
         
         /* header */
-        #header {position: relative; text-align: center; background: #7e57c2;}
-        #header .logo {position: absolute; left: 0; top: 0; z-index: 10; width:250px; height:100px; line-height: 100px; background: #d1c4e9;}
-        #header .nav {position: relative; float: right; width:100%; margin-top: 56px;}
-
+        #side {text-align: center;}
+        #side .logo {width: 300px; height: 150px; line-height: 150px; background: #d1c4e9; }
+        #side .nav {width: 300px; height: 700px; background: #b7a8d4}
+        
         /* banner */
-        #banner {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}
+        #banner {width: 900px; text-align: center; height: 450px; line-height: 450px; background: #9575cd;}
 
         /* contents */
-        #contents {text-align: center;}
-        #contents &gt; div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
+        #contents {width: 900px;}
+        #contents &gt; div {float: left; width: 33.333333%; height: 300px; text-align: center; line-height: 300px;}
         #contents &gt; div.cont1 {background: #7e57c2;}
         #contents &gt; div.cont2 {background: #673ab7;}
         #contents &gt; div.cont3 {background: #5e35b1 ;}
 
         /* footer */
-        #footer {height: 100px; line-height: 100px; text-align: center; }
-        #footer .foot1 {float: left; width: 200px; background: #5e35b1;}
-        #footer .foot2 {float: left; width: 800px; background: #512da8;}
-        #footer .foot3 {float: left; width: 200px; background: #4527a0;}
+        #footer {width: 900px; text-align: center;}
+        #footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #5e35b1;}
+        #footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #512da8;}
+        #footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #4527a0;}
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    
     &lt;div id="wrap"&gt;
-        &lt;header id="header" class="clearfix"&gt;
+        &lt;aside id="side"&gt;
             &lt;h1 class="logo"&gt;로고&lt;/h1&gt;
             &lt;nav class="nav"&gt;
+                
             &lt;/nav&gt;
-        &lt;/header&gt;
-        &lt;!-- //header --&gt;
+        &lt;/aside&gt;
+        &lt;section id="content"&gt;
+            &lt;section id="banner"&gt;
+                &lt;h2&gt;이미지 슬라이드&lt;/h2&gt;
+            &lt;/section&gt;
+            &lt;!-- //banner --&gt;
 
-        &lt;section id="banner"&gt;
-            &lt;h2&gt;이미지 슬라이드&lt;/h2&gt;
+            &lt;section id="contents" class="clearfix"&gt;
+                &lt;div class="cont1"&gt;&lt;h3&gt;공지사항&lt;/h3&gt;&lt;/div&gt;
+                &lt;div class="cont2"&gt;&lt;h3&gt;갤러리&lt;/h3&gt;&lt;/div&gt;
+                &lt;div class="cont3"&gt;&lt;h3&gt;팝업&lt;/h3&gt;&lt;/div&gt;
+            &lt;/section&gt;
+            &lt;!-- //contents --&gt;
+
+            &lt;footer id="footer"&gt;
+                &lt;div class="foot1"&gt;&lt;h3&gt;로고&lt;/h3&gt;&lt;/div&gt;
+                &lt;div class="foot2"&gt;&lt;h3&gt;하단 메뉴&lt;/h3&gt;&lt;/div&gt;
+                &lt;div class="foot3"&gt;&lt;h3&gt;Copyright&lt;/h3&gt;&lt;/div&gt;
+            &lt;/footer&gt;
+            &lt;!-- //footer --&gt;
         &lt;/section&gt;
-        &lt;!-- //banner --&gt;
-
-        &lt;section id="contents" class="clearfix"&gt;
-            &lt;div class="cont1"&gt;&lt;h3&gt;공지사항&lt;/h3&gt;&lt;/div&gt;
-            &lt;div class="cont2"&gt;&lt;h3&gt;갤러리&lt;/h3&gt;&lt;/div&gt;
-            &lt;div class="cont3"&gt;&lt;h3&gt;팝업&lt;/h3&gt;&lt;/div&gt;
-        &lt;/section&gt;
-        &lt;!-- //contents --&gt;
-
-        &lt;footer id="footer"&gt;
-            &lt;div class="foot1"&gt;&lt;h3&gt;로고&lt;/h3&gt;&lt;/div&gt;
-            &lt;div class="foot2"&gt;&lt;h3&gt;Copyright&lt;/h3&gt;&lt;/div&gt;
-            &lt;div class="foot3"&gt;&lt;h3&gt;SNS&lt;/h3&gt;&lt;/div&gt;
-        &lt;/footer&gt;
-        &lt;!-- //footer --&gt;
     &lt;/div&gt;
     
     &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;
-
+        $(".nav &gt; ul &gt; li").hover(
+            function(){
+                $(this).find(".submenu").stop().slideDown();
+            },function(){
+                $(this).find(".submenu").stop().slideUp();
+        });
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -254,65 +263,62 @@
                 <!--//tab-cont1 -->
                 <div>
 <pre class="line-numbers language-html"><code>&lt;div id="wrap"&gt;
-    &lt;header id="header" class="clearfix"&gt;
+    &lt;aside id="side"&gt;
         &lt;h1 class="logo"&gt;로고&lt;/h1&gt;
         &lt;nav class="nav"&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;a href="#"&gt;MENU-1&lt;/a&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Menu1&lt;/a&gt;
                     &lt;ul class="submenu"&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-1&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-2&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-3&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-4&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu3&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;MENU-2&lt;/a&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Menu2&lt;/a&gt;
                     &lt;ul class="submenu"&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-1&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-2&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-3&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-4&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu3&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;MENU-3&lt;/a&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Menu3&lt;/a&gt;
                     &lt;ul class="submenu"&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-1&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-2&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu3&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;MENU-4&lt;/a&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Menu4&lt;/a&gt;
                     &lt;ul class="submenu"&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-1&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-2&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#"&gt;subMenu-3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;SubMenu3&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;!-- //header --&gt;
+    &lt;/aside&gt;
+    &lt;section id="content"&gt;
+        &lt;section id="banner"&gt;
+            &lt;h2&gt;이미지 슬라이드&lt;/h2&gt;
+        &lt;/section&gt;
+        &lt;!-- //banner --&gt;
 
-    &lt;section id="banner"&gt;
-        &lt;h2&gt;이미지 슬라이드&lt;/h2&gt;
+        &lt;section id="contents" class="clearfix"&gt;
+            &lt;div class="cont1"&gt;&lt;h3&gt;공지사항&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class="cont2"&gt;&lt;h3&gt;갤러리&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class="cont3"&gt;&lt;h3&gt;팝업&lt;/h3&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //contents --&gt;
+
+        &lt;footer id="footer"&gt;
+            &lt;div class="foot1"&gt;&lt;h3&gt;로고&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class="foot2"&gt;&lt;h3&gt;하단 메뉴&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class="foot3"&gt;&lt;h3&gt;Copyright&lt;/h3&gt;&lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;!-- //footer --&gt;
     &lt;/section&gt;
-    &lt;!-- //banner --&gt;
-
-    &lt;section id="contents" class="clearfix"&gt;
-        &lt;div class="cont1"&gt;&lt;h3&gt;공지사항&lt;/h3&gt;&lt;/div&gt;
-        &lt;div class="cont2"&gt;&lt;h3&gt;갤러리&lt;/h3&gt;&lt;/div&gt;
-        &lt;div class="cont3"&gt;&lt;h3&gt;팝업&lt;/h3&gt;&lt;/div&gt;
-    &lt;/section&gt;
-    &lt;!-- //contents --&gt;
-
-    &lt;footer id="footer"&gt;
-        &lt;div class="foot1"&gt;&lt;h3&gt;로고&lt;/h3&gt;&lt;/div&gt;
-        &lt;div class="foot2"&gt;&lt;h3&gt;Copyright&lt;/h3&gt;&lt;/div&gt;
-        &lt;div class="foot3"&gt;&lt;h3&gt;SNS&lt;/h3&gt;&lt;/div&gt;
-    &lt;/footer&gt;
-    &lt;!-- //footer --&gt;
 &lt;/div&gt;
-
 
 
 
@@ -382,42 +388,41 @@
                 <!--//tab-cont2 -->
 
                 <div>
-<pre class="line-numbers language-css"><code>/* reset */
-* {margin: 0; padding: 0; font-size: 24px; color: #fff;}
+<pre class="line-numbers language-css"><code>* {margin: 0; padding: 0; font-size: 20px; color: #fff;}
 a {color: #333; text-decoration: none;}
 li {list-style: none;}
 table {border-spacing: 0;}
 .clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
 
 #wrap {width: 1200px; margin: 0px auto;}
+#side {float: left; width: 300px;}
+#content {float: left; width: 900px;}
 
 /* header */
-#header {position: relative; text-align: center; background: #7e57c2;}
-#header .logo {position: absolute; left: 0; top: 0; z-index: 10; width:250px; height:100px; line-height: 100px; background: #d1c4e9;}
-#header .nav {position: relative; float: right; width:100%; margin-top: 56px;}
-#header .nav ul {padding-left: 40%;}
-#header .nav ul li {position: relative; float: left; width: 25%; text-align: center;}
-#header .nav ul li a {display: block; padding: 10px; font-size: 20px; color: #fff; background: #b39ddb;}
-#header .nav ul li a:hover {background: rgba(0,0,0,0.4);}
-#header .nav ul li ul.submenu {display: none; position: absolute; left: 0; top: 44px; padding-left: 0; background: #b39ddb; height: 176px;}
-#header .nav ul li:first-child ul.submenu:after {content: ''; position: absolute; left: -480px; top: 0; width: 480px; height: 176px; background: #b39ddb;}
-#header .nav ul li ul.submenu li {width: 100%;}
+#side {text-align: center;}
+#side .logo {width: 300px; height: 150px; line-height: 150px; background: #d1c4e9; }
+#side .nav {width: 300px; height: 700px; background: #b7a8d4}
+#side .nav li {text-align: center; background: #b39ddb; position: relative;}
+#side .nav li a {padding: 10px;display: block; color:#fff;}
+#side .nav li a:hover {background: rgba(0,0,0,0.4); }
+#side .nav li ul.submenu {display: none; position: absolute; right: -200px; top: 0; background: #9575cd; width: 200px;}
+#side .nav li ul.submenu a:hover {background: rgba(0,0,0,0.2);}
 
 /* banner */
-#banner {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}
+#banner {width: 900px; text-align: center; height: 450px; line-height: 450px; background: #9575cd;}
 
 /* contents */
-#contents {text-align: center;}
-#contents > div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
+#contents {width: 900px;}
+#contents > div {float: left; width: 33.333333%; height: 300px; text-align: center; line-height: 300px;}
 #contents > div.cont1 {background: #7e57c2;}
 #contents > div.cont2 {background: #673ab7;}
 #contents > div.cont3 {background: #5e35b1 ;}
 
 /* footer */
-#footer {height: 100px; line-height: 100px; text-align: center; }
-#footer .foot1 {float: left; width: 200px; background: #5e35b1;}
-#footer .foot2 {float: left; width: 800px; background: #512da8;}
-#footer .foot3 {float: left; width: 200px; background: #4527a0;}
+#footer {width: 900px; text-align: center;}
+#footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #5e35b1;}
+#footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #512da8;}
+#footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #4527a0;}
 
 
 
@@ -490,12 +495,11 @@ table {border-spacing: 0;}
                 <div>
 <pre class="line-numbers language-js"><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    $(".nav > ul > li").mouseenter(function(){        
-        $(".nav > ul > li > ul").show();   
-    });
-
-    $(".nav > ul > li").mouseleave(function(){
-        $(".nav > ul > li > ul").hide();
+    $(".nav > ul > li").hover(
+        function(){
+            $(this).find(".submenu").stop().slideDown();
+        },function(){
+            $(this).find(".submenu").stop().slideUp();
     });
 &lt;/script&gt;
 

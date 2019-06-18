@@ -21,7 +21,7 @@
         #side .logo {width: 300px; height: 150px; line-height: 150px; background: #d1c4e9; }
         #side .nav {width: 300px; height: 700px; background: #b7a8d4}
         #side .nav li {text-align: center; background: #b39ddb;}
-        #side .nav li a {padding: 10px;display: block; color:#fff;}
+        #side .nav li a {padding: 10px;display: block; color:#fff; background: rgba(0,0,0,0.3);}
         #side .nav li a:hover {background: rgba(0,0,0,0.4);}
         #side .nav li ul.submenu {display: none;}
         #side .nav li ul.submenu a:hover {background: rgba(0,0,0,0.2);}
@@ -104,12 +104,12 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-      $(".nav > ul > li").hover(
-        function(){
-          $(this).find(".submenu").stop().slideDown();
-      },function(){
-          $(this).find(".submenu").stop().slideUp();
-      });
+        $(".nav > ul > li").hover(
+            function(){
+                $(this).find(".submenu").stop().slideDown();
+            },function(){
+                $(this).find(".submenu").stop().slideUp();
+        });
     </script>
 </body>
 
