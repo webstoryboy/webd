@@ -132,7 +132,7 @@
 &lt;html lang="ko"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;웹 디자인 기능사&lt;/title&gt;
+    &lt;title&gt;웹 디자인 기능사 - 탭메뉴&lt;/title&gt;
 
     &lt;style&gt;
         /* reset */
@@ -151,16 +151,23 @@
 
         /* banner */
         #banner { }
+        
+        /* slider */
+        .slider {position: relative;}
+        .slider &gt; div {position: absolute; left: 0; top: 0;}
+        .slider &gt; div img {width: 100%;}
+        .slideList {position: relative; width: 3600px; height: 360px;}
+        .slideList .slideImg {float: left; width: 1200px; height: 360px;}
 
         /* contents */
         #contents {text-align: center;}
         #contents &gt; div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
         #contents &gt; div.cont1 {background: #7e57c2;}
         #contents &gt; div.cont2 {background: #673ab7;}
-        #contents &gt; div.cont3 {background: #5e35b1;}
+        #contents &gt; div.cont3 {background: #5e35b1 ;}
 
         /* footer */
-        #footer {height: 100px; line-height: 100px; text-align: center;}
+        #footer {height: 100px; line-height: 100px; text-align: center; }
         #footer .foot1 {float: left; width: 200px; background: #5e35b1;}
         #footer .foot2 {float: left; width: 800px; background: #512da8;}
         #footer .foot3 {float: left; width: 200px; background: #4527a0;}
@@ -200,8 +207,9 @@
 
     &lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;
+
+
 
 
 
@@ -271,7 +279,7 @@
     &lt;!-- //header --&gt;
 
     &lt;section id="banner"&gt;
-        &lt;h2&gt;이미지가 3초에 한번씩 위아래로 전환되는 효과&lt;/h2&gt;
+        &lt;h2&gt;이미지가 3초에 한번씩 좌우로 전환되는 효과&lt;/h2&gt;
         &lt;div class="slideList"&gt;
             &lt;div class="slideImg"&gt;&lt;img src="img/ban01.jpg" alt="이미지 설명"&gt;&lt;/div&gt;
             &lt;div class="slideImg"&gt;&lt;img src="img/ban02.jpg" alt="이미지 설명"&gt;&lt;/div&gt;
@@ -393,7 +401,8 @@ table {border-spacing: 0;}
 .slider {position: relative;}
 .slider &gt; div {position: absolute; left: 0; top: 0;}
 .slider &gt; div img {width: 100%;}
-.slideList {position: absolute; top: 0; left: 0; width: 1200px; height: 360px;}
+.slideList {position: relative; width: 3600px; height: 360px;}
+.slideList .slideImg {float: left; width: 1200px; height: 360px;}
 
 /* contents */
 #contents {text-align: center;}
@@ -403,7 +412,7 @@ table {border-spacing: 0;}
 #contents &gt; div.cont3 {background: #5e35b1 ;}
 
 /* footer */
-#footer {height: 100px; line-height: 100px; text-align: center; }
+#footer {height: 100px; line-height: 100px; text-align: center;}
 #footer .foot1 {float: left; width: 200px; background: #5e35b1;}
 #footer .foot2 {float: left; width: 800px; background: #512da8;}
 #footer .foot3 {float: left; width: 200px; background: #4527a0;}
@@ -477,17 +486,18 @@ table {border-spacing: 0;}
                 <!--//tab-cont3 -->
 
                 <div>
-<pre class="line-numbers language-js"><code>var currentIndex = 0;
+<pre class="line-numbers language-js"><code>var slideCount = $(".slideImg").length;
+var currentIndex = 0;
+var slidePosition;
 
 setInterval(function(){
-    if(currentIndex &lt; 2){
+    if(currentIndex &lt; slideCount - 1){
         currentIndex++;
     } else {
         currentIndex = 0;
     }
-    var slidePosition = currentIndex * (-360)+"px";
-
-    $(".slideList").animate({ top: slidePosition},400);
+    slidePosition = currentIndex * (-1200)+"px";
+    $(".slideList").animate({ left: slidePosition},400);
 },3000);
 
 
