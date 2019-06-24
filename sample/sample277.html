@@ -150,14 +150,13 @@
         #header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
 
         /* banner */
-        #banner { }
-        
-        /* slider */
-        .slider {position: relative;}
-        .slider &gt; div {position: absolute; left: 0; top: 0;}
-        .slider &gt; div img {width: 100%;}
-        .slideList {position: relative; width: 3600px; height: 360px;}
-        .slideList .slideImg {float: left; width: 1200px; height: 360px;}
+        #banner {width: 1200px; text-align: center; height: 360px; overflow:hidden;}
+
+        /* slide */
+        .slideList {position: relative; width: 3600px; height: 360px; }
+        .slideList .slideImg {position: relative; float: left; width: 1200px; height: 360px;}
+        .slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+        .slideList .slideImg img {display: block;}
 
         /* contents */
         #contents {text-align: center;}
@@ -183,7 +182,20 @@
         &lt;!-- //header --&gt;
 
         &lt;section id="banner"&gt;
-
+            &lt;div class="slideList"&gt;
+                &lt;div class="slideImg"&gt;
+                    &lt;h2&gt;이미지 슬라이드1&lt;/h2&gt;
+                    &lt;img src="img/ban01.jpg" alt="이미지1"&gt;
+                &lt;/div&gt;
+                &lt;div class="slideImg"&gt;
+                    &lt;h2&gt;이미지 슬라이드2&lt;/h2&gt;
+                    &lt;img src="img/ban02.jpg" alt="이미지2"&gt;
+                &lt;/div&gt;
+                &lt;div class="slideImg"&gt;
+                    &lt;h2&gt;이미지 슬라이드3&lt;/h2&gt;
+                    &lt;img src="img/ban03.jpg" alt="이미지3"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
         &lt;/section&gt;
         &lt;!-- //banner --&gt;
 
@@ -279,11 +291,19 @@
     &lt;!-- //header --&gt;
 
     &lt;section id="banner"&gt;
-        &lt;h2&gt;이미지가 3초에 한번씩 좌우로 전환되는 효과&lt;/h2&gt;
         &lt;div class="slideList"&gt;
-            &lt;div class="slideImg"&gt;&lt;img src="img/ban01.jpg" alt="이미지 설명"&gt;&lt;/div&gt;
-            &lt;div class="slideImg"&gt;&lt;img src="img/ban02.jpg" alt="이미지 설명"&gt;&lt;/div&gt;
-            &lt;div class="slideImg"&gt;&lt;img src="img/ban03.jpg" alt="이미지 설명"&gt;&lt;/div&gt;
+            &lt;div class="slideImg"&gt;
+                &lt;h2&gt;이미지 슬라이드1&lt;/h2&gt;
+                &lt;img src="img/ban01.jpg" alt="이미지1"&gt;
+            &lt;/div&gt;
+            &lt;div class="slideImg"&gt;
+                &lt;h2&gt;이미지 슬라이드2&lt;/h2&gt;
+                &lt;img src="img/ban02.jpg" alt="이미지2"&gt;
+            &lt;/div&gt;
+            &lt;div class="slideImg"&gt;
+                &lt;h2&gt;이미지 슬라이드3&lt;/h2&gt;
+                &lt;img src="img/ban03.jpg" alt="이미지3"&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- //banner --&gt;
@@ -386,23 +406,13 @@ table {border-spacing: 0;}
 #header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
 
 /* banner */
-#banner {position: relative; width: 1200px; margin: 0 auto; text-align: center; overflow: hidden; height: 360px; }
-#banner img {width: 100%; display: block;}
-#banner h2 {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background: rgba(255,255,255,0.5);
-    border-radius: 25px;
-    padding: 10px 30px;
-}
+#banner {width: 1200px; text-align: center; height: 360px; overflow:hidden;}
 
-/* slider */
-.slider {position: relative;}
-.slider &gt; div {position: absolute; left: 0; top: 0;}
-.slider &gt; div img {width: 100%;}
-.slideList {position: relative; width: 3600px; height: 360px;}
-.slideList .slideImg {float: left; width: 1200px; height: 360px;}
+/* slide */
+.slideList {position: relative; width: 3600px; height: 360px; }
+.slideList .slideImg {position: relative; float: left; width: 1200px; height: 360px;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+.slideList .slideImg img {display: block;}
 
 /* contents */
 #contents {text-align: center;}
