@@ -19,7 +19,7 @@
 <ul>
   <li>실전사이트 이미지1 <a href="https://webstoryboy.github.io/webd/Coding_img1.jpg">VIEW</a></li>
   <li>실전사이트 이미지2 <a href="https://webstoryboy.github.io/webd/Coding_img2.jpg">VIEW</a></li>
-<ul>
+</ul>
 
 
 <ul>
