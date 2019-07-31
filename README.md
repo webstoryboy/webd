@@ -16,6 +16,11 @@
   <li>12. 실전사이트 만들기1 <a href="https://webstoryboy.github.io/webd/webd13.html">VIEW</a></li>
 </ul>
 
+<ul>
+  <li>실전사이트 이미지1 <a href="https://webstoryboy.github.io/webd/Coding_img1.jpg">VIEW</a></li>
+  <li>실전사이트 이미지2 <a href="https://webstoryboy.github.io/webd/Coding_img2.jpg">VIEW</a></li>
+</ul>
+
 
 <ul>
   <li>01. 웹디자인 기능사 따라하면 딴다 - INTRO | 웹스토리보이</li>
