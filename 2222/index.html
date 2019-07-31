@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookit</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="warp">
+        <header id="header" class="clearfix">
+            <h1><a href="#"><img src="images/logo.jpg" alt="co0kit"></a></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">Cookit 소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">sub-menu1</a></li>
+                            <li><a href="#">sub-menu1</a></li>
+                            <li><a href="#">sub-menu1</a></li>
+                            <li><a href="#">sub-menu1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cookit 메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">sub-menu2</a></li>
+                            <li><a href="#">sub-menu2</a></li>
+                            <li><a href="#">sub-menu2</a></li>
+                            <li><a href="#">sub-menu2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">리뷰</a>
+                        <ul class="submenu">
+                            <li><a href="#">sub-menu3</a></li>
+                            <li><a href="#">sub-menu3</a></li>
+                            <li><a href="#">sub-menu3</a></li>
+                            <li><a href="#">sub-menu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이벤트</a>
+                        <ul class="submenu">
+                            <li><a href="#">sub-menu4</a></li>
+                            <li><a href="#">sub-menu4</a></li>
+                            <li><a href="#">sub-menu4</a></li>
+                            <li><a href="#">sub-menu4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">My쿡킷</a>
+                        <ul class="submenu">
+                            <li><a href="#">sub-menu5</a></li>
+                            <li><a href="#">sub-menu5</a></li>
+                            <li><a href="#">sub-menu5</a></li>
+                            <li><a href="#">sub-menu5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- //header-->
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지1</h2>
+                    <img src="images/banner01.jpg" alt="쿡킷을 더 편리하게 COOKIT 앱 런칭기념 이벤트1">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지2</h2>
+                    <img src="images/banner01.jpg" alt="쿡킷을 더 편리하게 COOKIT 앱 런칭기념 이벤트2">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지3</h2>
+                    <img src="images/banner01.jpg" alt="쿡킷을 더 편리하게 COOKIT 앱 런칭기념 이벤트3">
+                </div>
+            </div>
+        </section>
+        
+        <!-- //banner-->
+        <section id="content1" class="clearfix">
+            <article class="left">
+                <h2 class="title">우리집도 배달되냐?</h2>
+                <p class="desc">너네집은 배달 안된다.</p>
+                <a href="#" class="btn">배송지 검색</a>
+            </article>
+            <article class="right">
+                <h2 class="title">우리집도 배달되냐?</h2>
+                <p class="desc">너네집은 배달 안된다.</p>
+                <a href="#" class="btn">62:23:10 <em>남은시간</em></a>
+            </article>
+        </section>
+        <!-- //content1-->
+        <section id="content2">
+            <h2>실시간 베스트</h2>
+            <div class="best clearfix">
+                <figure>
+                    <img src="images/best1.jpg" alt="어복쟁반">
+                    <figcaption>
+                        평양식 어복쟁반
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/best2.jpg" alt="어복쟁반">
+                    <figcaption>
+                        평양식 어복쟁반
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/best3.jpg" alt="어복쟁반">
+                    <figcaption>
+                        평양식 어복쟁반
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- //content2-->
+        
+        <footer id="footer" class="clearfix">
+            <h2><img src="images/flogo.jpg" alt="cookit"></h2>
+            <div class="foot">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>
+                <address>
+                    씨제이제일제당주(주) 대표자:신현재<br>
+                    주소: 서울시 강남구 서초대로 77길 13 사업자등록번호 : 100-38-30489<br>
+                    통신판매업신고 중구 88903호 개인정보취급방침
+                </address>
+            </div>
+        </footer>
+        <!-- //footer-->
+    </div>
+    <!-- //warp-->
+    
+    <!-- script -->
+    <script src="script/jquery.min.js"></script>
+    <script>
+        //네비게이션
+        $(".nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown(200);
+        });
+        $(".nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp(200);
+        });
+        
+        
+        //currentIndex = 0; 첫번째 이미지 : 0
+        //currentIndex = 1; 두번째 이미지 : -389
+        //currentIndex = 2; 세번째 이미지 : -778
+        
+        //이미지 슬라이드(상하)
+//        var currentIndex = 0; //첫번째 이미지
+//        
+//        setInterval(function(){
+//            if(currentIndex < 2){
+//                currentIndex++;
+//            } else {
+//                currentIndex = 0;
+//            }
+//            var slidePosition = currentIndex * (-389)+"px";
+//            $(".slideList").animate({top: slidePosition},400);
+//            
+//        },3000);
+        
+        //이미지 슬라이드(좌우)
+        var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+        },3000);
+
+    </script>
+</body> 
+</html>
+
+
+
+
+
+

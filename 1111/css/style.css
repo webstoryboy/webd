@@ -1,5 +1,5 @@
 /* reset */
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; font-size: 16px;}
 li {list-style: none;}
 a {color: #333; text-decoration: none;}
 .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
@@ -16,13 +16,27 @@ a {color: #333; text-decoration: none;}
 #header h1 {float: left; padding-top: 5px;}
 #header h1 img {width: 130px;}
 #header .nav {float: right;}
-#header .nav ul {}
-#header .nav li {float: left;}
-#header .nav li a {display: block; padding: 40px 15px;}
+#header .nav ul {margin-top: 20px;}
+#header .nav li {position: relative; float: left; width: 120px; text-align: center;}
+#header .nav li a {display: block; padding: 20px 15px; background: #ccc;}
+#header .nav li a:hover {background: #ddd;}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 39px; background: #ddd;}
+#header .nav li ul.submenu li {}
+#header .nav li ul.submenu li a {padding: 10px;}
+#header .nav li ul.submenu li a:hover {background: #999;}
 
 /* banner */
-#banner {}
+#banner {width: 1000px; height: 378px; overflow: hidden;}
 #banner img {width: 100%;}
+.slideList {position: relative;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; 
+	transform: translate(-50%,-50%); background: rgba(0,0,0,0.5);
+	padding: 10px 30px; border-radius: 25px; color: #fff;}
+.slideList .slideImg img {display: block;}
+
+
+
 
 /* content1 */
 #content1 {margin-top: 15px;}

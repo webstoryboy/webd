@@ -1,0 +1,94 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 16px;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+.clearfix::before, .clearfix::after {content: ''; display: block; clear: both;}
+
+/* warp */
+#warp {width: 1000px; margin: 0 auto;}
+
+/* header */
+#header h1 {float: left; padding: 15px 0 10px;}
+#header h1 img {width: 110px;}
+#header .nav {float: right; background: #ddd;}
+#header .nav li {position: relative; float: left; width: 140px; text-align: center;}
+#header .nav li a {display: block; font-size: 20px; font-weight: bold; padding: 24px 20px 20px 20px;}
+#header .nav li a:hover {background: #ccc;}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 67px; z-index: 100;}
+#header .nav li ul.submenu li a {padding: 10px; background: #888;}
+#header .nav li ul.submenu li a:hover {background: #666;;}
+
+/* banner */
+#banner {height: 389px; overflow: hidden;}
+#banner img {width: 100%; display: block;}
+
+/* 상하
+.slideList {position: relative; width: 1000px; height: 389px;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%;
+transform: translate(-50%,-50%); background: rgba(0,0,0,0.4); padding: 10px 30px;
+border-radius: 20px;}
+*/
+
+/* 좌우 */
+.slideList {position: relative; width: 3000px; z-index: 50;}
+.slideList .slideImg {position: relative; width: 1000px; float: left;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%;
+transform: translate(-50%,-50%); background: rgba(0,0,0,0.4); padding: 10px 30px;
+border-radius: 20px;}
+
+
+/* content1 */
+#content1 {margin-top: 20px;}
+#content1 .left {float: left; width: 49%; padding: 20px; 
+    background: #f2f2f2 url(../images/bg1.jpg) no-repeat right 20px center; 
+    background-size: 80px;
+    box-sizing: border-box; margin-right: 2%;}
+#content1 .left .title {font-size: 22px; padding-bottom: 5px;}
+#content1 .left .desc {font-size: 14px; color: #666; padding-bottom: 15px;}
+#content1 .left .btn {
+    background: url(../images/icon1.jpg) no-repeat left top;
+    background-size: 20px;
+    padding-left: 25px; padding-top: 3px;
+}
+#content1 .right {float: left; width: 49%; padding: 20px; 
+    background: #f2f2f2 url(../images/bg2.jpg) no-repeat right 20px center; 
+    background-size: 80px;
+    box-sizing: border-box; margin-right: 0;}
+#content1 .right .title {font-size: 22px; padding-bottom: 5px;}
+#content1 .right .desc {font-size: 14px; color: #666; padding-bottom: 15px;}
+#content1 .right .btn {
+    background: url(../images/icon2.jpg) no-repeat left top;
+    background-size: 20px;
+    padding-left: 25px; padding-top: 2px;
+}
+#content1 .right .btn em {font-size: 13px; color: 999; font-style: normal;}
+
+
+/* content2 */
+#content2 {margin-top: 30px;}
+#content2 h2 {font-size: 24px; padding-bottom: 10px;}
+#content2 .best {}
+#content2 .best figure {float: left; width: 32%; margin-right: 2%;}
+#content2 .best figure img {width: 100%;}
+#content2 .best figure:last-child{margin-right: 0;}
+#content2 .best figcaption {}
+
+/* footer */
+#footer {padding: 20px 0; background: #202020; margin-top: 30px;}
+#footer h2 {float: left; padding-left: 20px;}
+#footer h2 img {width: 150px;}
+#footer .foot {float: right; padding-right: 30px;}
+#footer .foot ul {padding-bottom: 10px;}
+#footer .foot ul li {display: inline;}
+#footer .foot ul li a {color: #fff; padding-right: 10px;}
+#footer .foot address {font-style: normal; color: #ccc;}
+
+
+
+
+
+
+
+
+
