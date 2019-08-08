@@ -89,27 +89,56 @@
         </section>
         <!-- //content1-->
         <section id="content2">
-            <h2>실시간 베스트</h2>
-            <div class="best clearfix">
-                <figure>
-                    <img src="images/best1.jpg" alt="어복쟁반">
-                    <figcaption>
-                        평양식 어복쟁반
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/best2.jpg" alt="어복쟁반">
-                    <figcaption>
-                        평양식 어복쟁반
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/best3.jpg" alt="어복쟁반">
-                    <figcaption>
-                        평양식 어복쟁반
-                    </figcaption>
-                </figure>
-            </div>
+            <div class="tab-menu">
+                <div class="tab-btn">
+                    <ul>
+                        <li class="active"><a href="#">실시간 베스트</a></li>
+                        <li><a href="#">생생한 리뷰</a></li>
+                    </ul>
+                </div>
+                <div class="tab-cont">
+                    <div class="best clearfix">
+                        <figure>
+                            <img src="images/best1.jpg" alt="어복쟁반">
+                            <figcaption>
+                                평양식 어복쟁반1
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/best2.jpg" alt="어복쟁반">
+                            <figcaption>
+                                평양식 어복쟁반1
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/best3.jpg" alt="어복쟁반">
+                            <figcaption>
+                                평양식 어복쟁반1
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="best clearfix">
+                        <figure>
+                            <img src="images/best3.jpg" alt="어복쟁반">
+                            <figcaption>
+                                평양식 어복쟁반2
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/best2.jpg" alt="어복쟁반">
+                            <figcaption>
+                                평양식 어복쟁반2
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/best1.jpg" alt="어복쟁반">
+                            <figcaption>
+                                평양식 어복쟁반2
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>    
         </section>
         <!-- //content2-->
         
@@ -133,50 +162,16 @@
     </div>
     <!-- //warp-->
     
+    <!-- layer -->
+    <div class="layer_bg"></div>
+    <div class="layer">
+        <h2>제목</h2>
+        <a href="#" class="close">닫기</a>
+    </div>
+    
     <!-- script -->
     <script src="script/jquery.min.js"></script>
-    <script>
-        //네비게이션
-        $(".nav > ul > li").mouseover(function(){
-            $(this).find(".submenu").stop().slideDown(200);
-        });
-        $(".nav > ul > li").mouseout(function(){
-            $(this).find(".submenu").stop().slideUp(200);
-        });
-        
-        
-        //currentIndex = 0; 첫번째 이미지 : 0
-        //currentIndex = 1; 두번째 이미지 : -389
-        //currentIndex = 2; 세번째 이미지 : -778
-        
-        //이미지 슬라이드(상하)
-//        var currentIndex = 0; //첫번째 이미지
-//        
-//        setInterval(function(){
-//            if(currentIndex < 2){
-//                currentIndex++;
-//            } else {
-//                currentIndex = 0;
-//            }
-//            var slidePosition = currentIndex * (-389)+"px";
-//            $(".slideList").animate({top: slidePosition},400);
-//            
-//        },3000);
-        
-        //이미지 슬라이드(좌우)
-        var currentIndex = 0;
-        
-        setInterval(function(){
-            if(currentIndex < 2){
-                currentIndex++;
-            } else {
-                currentIndex = 0;
-            }
-            var slidePosition = currentIndex * (-1000)+"px";
-            $(".slideList").animate({ left:slidePosition },400);
-        },3000);
-
-    </script>
+    <script src="script/custom.js"></script>
 </body> 
 </html>
 

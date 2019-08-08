@@ -4,24 +4,18 @@ li {list-style: none;}
 a {color: #333; text-decoration: none;}
 .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
 
-/* layout */
+/* wrap */
 #wrap {width: 1000px; height: 1000px; margin: 0 auto; }
-#header {height: 100px;}
-#banner {}
-#content1 {}
-#content2 {}
-#footer {}
 
 /* header */
+#header {height: 100px;}
 #header h1 {float: left; padding-top: 5px;}
 #header h1 img {width: 130px;}
-#header .nav {float: right;}
-#header .nav ul {margin-top: 20px;}
+#header .nav {float: right; z-index: 100; position: relative; margin-top: 20px;}
 #header .nav li {position: relative; float: left; width: 120px; text-align: center;}
 #header .nav li a {display: block; padding: 20px 15px; background: #ccc;}
 #header .nav li a:hover {background: #ddd;}
-#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 39px; background: #ddd;}
-#header .nav li ul.submenu li {}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 59px; background: #ddd;}
 #header .nav li ul.submenu li a {padding: 10px;}
 #header .nav li ul.submenu li a:hover {background: #999;}
 
@@ -35,19 +29,28 @@ a {color: #333; text-decoration: none;}
 	padding: 10px 30px; border-radius: 25px; color: #fff;}
 .slideList .slideImg img {display: block;}
 
-
-
-
 /* content1 */
 #content1 {margin-top: 15px;}
-#content1 .notice {float: left; width: 49%; height: 220px; margin-right: 2%; background: #ccc}
-#content1 .ad {float: left; width: 49%; margin-right: 0; background: #444}
+#content1 .notice {float: left; width: 49%; height: 220px; margin-right: 2%; 
+    border: 1px solid #ccc; box-sizing: border-box;}
+#content1 .ad {float: left; width: 49%; margin-right: 0;}
 #content1 .ad img {width: 100%; display: block;}
+
+/* notice */
+.notice {position: relative; padding: 30px;}
+.notice ul li {float: left; margin-right: 20px;}
+.notice ul li a {font-size: 24px; color: #999; font-weight: bold;}
+.notice ul li.active a {color: #000;}
+.notice ul li ul {position: absolute; left: 30px; top: 70px;}
+.notice ul li ul li {width: 95%; padding: 5px 0;}
+.notice ul li ul li a {float: left; width: 60%; font-size: 16px; color: #333; 
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: normal;}
+.notice ul li ul li span {float: right; width: 20%;}
+.notice .more {position: absolute; right: 30px; top: 35px;}
 
 /* content2 */
 #content2 {margin-top: 25px;}
 #content2 h2 {margin-bottom: 10px;}
-#content2 ul {}
 #content2 li {float: left; width: 24.25%; margin-right: 1%;}
 #content2 li:last-child {margin-right: 0;}
 #content2 li img {width: 100%;}
@@ -57,14 +60,25 @@ a {color: #333; text-decoration: none;}
 #footer {border-top: 1px solid #ccc; margin-top: 30px; padding: 30px 0;}
 #footer address {font-style: normal; color: #666;}
 #footer address ul {width: 670px;}
-#footer address li {position: relative; display: inline; line-height: 1.7;
-padding: 0px 15px 0px 10px;}
-#footer address li:after {content: ''; width: 1px; height: 13px;
-    background: #666; position: absolute; right: 0; top: 0;}
+#footer address li {position: relative; display: inline; line-height: 1.7; padding: 0px 15px 0px 10px;}
+#footer address li:after {content: ''; width: 1px; height: 13px; background: #666; position: absolute; right: 0; top: 0;}
 #footer address li.left {padding-left: 0;}
 #footer address p {text-transform: uppercase; padding-top: 30px;}
 
-
+/* layer */
+.layer_bg {
+    display: none;
+    width: 100%; height: 100%; background: rgba(0,0,0,0.8);
+    position: fixed; left: 0; top: 0; z-index: 900}
+.layer {
+    width: 500px; height: 500px; background: #ccc;
+    border: 2px solid #000;
+    position: absolute; 
+    left: 50%; top: 50%; z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+.layer h2 {padding: 20px; font-size: 30px;}
+.layer .close {position: absolute; bottom: 20px; right: 30px; font-size: 20px;}
 
 
 
