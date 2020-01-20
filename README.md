@@ -10,7 +10,7 @@
   <li>06. 세로 메뉴 유형2 <a href="https://webstoryboy.github.io/webd/webd06.html">VIEW</a></li>
   <li>07. 탭 메뉴 유형 <a href="https://webstoryboy.github.io/webd/webd07.html">VIEW</a></li>
   <li>08. 레이어 팝업 유형 <a href="https://webstoryboy.github.io/webd/webd09.html">VIEW</a></li>
-  <li>09. 이미지 슬라이드(위아래) <a href="https://webstoryboy.github.io/webd/webd10.html">VIEW</a></li>
+  <li>09. 이미지 슬라이드(위아래) <a href="https://webstoryboy.github.io/webd/webd09.html">VIEW</a></li>
   <li>10. 이미지 슬라이드(좌우) <a href="https://webstoryboy.github.io/webd/webd11.html">VIEW</a></li>
   <li>11. 이미지 슬라이드(페이드) <a href="https://webstoryboy.github.io/webd/webd10.html">VIEW</a></li>
   <li>12. 실전사이트 만들기1 <a href="https://webstoryboy.github.io/webd/webd13.html">VIEW</a></li>
